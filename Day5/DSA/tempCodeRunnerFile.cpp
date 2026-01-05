@@ -1,0 +1,1 @@
+isStrobogrammatic(str) ? "true" : "false"
