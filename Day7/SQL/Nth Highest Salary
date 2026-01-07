@@ -1,0 +1,18 @@
+Question :- https://leetcode.com/problems/nth-highest-salary/description/?envType=problem-list-v2&envId=database
+
+Code:- 
+
+CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
+BEGIN
+  Declare M INT;
+
+  SET M = N-1;
+
+  RETURN (
+      # Write your MySQL query statement below.
+      Select distinct salary from employee
+      order by salary Desc
+      Limit 1
+      OFFSET M
+  );
+END
