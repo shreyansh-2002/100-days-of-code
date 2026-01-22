@@ -1,0 +1,14 @@
+Question:- https://leetcode.com/problems/biggest-single-number/description/?envType=study-plan-v2&envId=top-sql-50
+
+Query:- 
+
+# Write your MySQL query statement below
+select max(num) as num
+from (select num
+     from MyNumbers
+     group by num
+     having count(num) = 1) t;
+-- order by num desc
+-- limit 1;
+
+
