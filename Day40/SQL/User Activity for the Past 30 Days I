@@ -1,0 +1,10 @@
+Question:- https://leetcode.com/problems/user-activity-for-the-past-30-days-i/description/?envType=problem-list-v2&envId=db-db2-filtering-aggregation
+
+Query:-
+
+# Write your MySQL query statement below
+select activity_date as day , 
+       count(distinct user_id) as active_users
+from Activity
+where Activity_date between '2019-06-28' AND '2019-07-27'
+group by activity_date;
