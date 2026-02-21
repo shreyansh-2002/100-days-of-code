@@ -1,0 +1,19 @@
+Question:-   https://leetcode.com/problems/employees-with-missing-information/description/
+
+Query:-
+
+# Write your MySQL query statement below
+select employee_id from employees 
+
+union
+
+select employee_id from salaries
+
+except
+
+select employees.employee_id
+from employees
+join salaries
+on Employees.employee_id = salaries.employee_id
+
+order by employee_id;
