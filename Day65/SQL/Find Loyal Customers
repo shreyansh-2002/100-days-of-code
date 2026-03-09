@@ -1,0 +1,15 @@
+Question:- https://leetcode.com/problems/find-loyal-customers/description/
+
+Query:-
+
+# Write your MySQL query statement below
+select customer_id
+from customer_transactions
+group by customer_id
+having sum(case when transaction_type = 'purchase' then 1 else 0 END) >= 3
+      AND
+      datediff(max(transaction_date),min(transaction_date)) >= 30
+      AND
+      sum(case when transaction_type = 'refund' then 1 else 0 END)*1.0/count(*) < 0.2
+order by customer_id;
+
