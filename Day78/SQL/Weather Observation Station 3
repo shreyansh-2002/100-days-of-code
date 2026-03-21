@@ -1,0 +1,7 @@
+Question:- https://www.hackerrank.com/challenges/weather-observation-station-3/problem?isFullScreen=true
+
+Query:- 
+
+select distinct city
+from station
+where ID %2 = 0;
