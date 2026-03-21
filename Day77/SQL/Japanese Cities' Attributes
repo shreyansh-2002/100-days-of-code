@@ -1,0 +1,6 @@
+Question:- https://www.hackerrank.com/challenges/japanese-cities-attributes/problem?isFullScreen=true
+
+Query:- 
+
+select * from city
+where countrycode = 'JPN';
