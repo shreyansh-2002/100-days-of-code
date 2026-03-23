@@ -1,0 +1,6 @@
+Question:- https://www.hackerrank.com/challenges/weather-observation-station-4/problem?isFullScreen=true
+
+Query:- 
+
+select abs(count(distinct city) - count(city))
+from station;
