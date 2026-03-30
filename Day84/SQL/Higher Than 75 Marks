@@ -1,0 +1,14 @@
+Question:- https://www.hackerrank.com/challenges/more-than-75-marks/problem?isFullScreen=true
+
+Query:- 
+
+/*
+Enter your query here.
+*/
+
+SELECT Name
+FROM STUDENTS
+WHERE Marks > 75
+ORDER BY 
+    SUBSTRING(Name, LENGTH(Name) - 2, 3),
+    ID;
