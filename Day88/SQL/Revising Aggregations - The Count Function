@@ -1,0 +1,7 @@
+Question:- https://www.hackerrank.com/challenges/revising-aggregations-the-count-function/problem?isFullScreen=true
+
+Query:- 
+
+select count(*)
+from city
+where population > 100000;
