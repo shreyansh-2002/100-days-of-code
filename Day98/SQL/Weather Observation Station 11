@@ -1,0 +1,8 @@
+Question:- https://www.hackerrank.com/challenges/weather-observation-station-11/problem?isFullScreen=true
+
+Query:- 
+
+select distinct city
+from station
+where city not REGEXP '^[aeiou]'
+or city not REGEXP '[aeiou]$';
